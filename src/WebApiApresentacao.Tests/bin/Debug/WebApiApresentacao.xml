@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiApresentacao</name>
+    </assembly>
+    <members>
+        <member name="T:WebApiApresentacao.SwaggerConfig">
+            <summary>
+            SwaggerConfig
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.SwaggerConfig.Register">
+            <summary>
+            SwaggerConfig Register
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.SwaggerConfig.ReturnXmlPath">
+            <summary>
+            Return Xml Path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApiApresentacao.WebApiConfig">
+            <summary>
+            WebApiCOnfig
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Register
+            </summary>
+            <param name="config">HttpConfiguration</param>
+        </member>
+        <member name="T:WebApiApresentacao.Controllers.ApresentacaoController">
+            <summary>
+            Controller Apresentacao
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ApresentacaoController.Get">
+            <summary>
+            Get all
+            </summary>
+            <remarks>Get all classes</remarks>
+            <response code="200">OK</response>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>All classes</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ApresentacaoController.Get(System.Int32)">
+            <summary>
+            Get a class
+            </summary>
+            <remarks>Get a class by id</remarks>
+            <response code="200">OK</response>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Return a class</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ApresentacaoController.Post(WebApiApresentacao.Models.ApresentacaoModel)">
+            <summary>
+            Add new
+            </summary>
+            <remarks>Insert values</remarks>
+            <response code="201">Created</response>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Return a the value added</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ApresentacaoController.Put(System.Int32,WebApiApresentacao.Models.ApresentacaoModel)">
+            <summary>
+            Update values
+            </summary>
+            <remarks>Alter values</remarks>
+            <response code="202">Accepted</response>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+            <returns>Return a the value updated</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ApresentacaoController.Delete(System.Int32)">
+            <summary>
+            Delete values
+            </summary>
+            <remarks>Delete values by id</remarks>
+            <response code="200">OK</response>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="T:WebApiApresentacao.WebApiApplication">
+            <summary>
+            WebApiApplication
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.WebApiApplication.Application_Start">
+            <summary>
+            Application_Start
+            </summary>
+        </member>
+        <member name="T:WebApiApresentacao.Models.ApresentacaoModel">
+            <summary>
+            Model Class
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.Models.ApresentacaoModel.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_id">Id</param>
+            <param name="_value">Value</param>
+        </member>
+        <member name="P:WebApiApresentacao.Models.ApresentacaoModel.id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:WebApiApresentacao.Models.ApresentacaoModel.value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="T:WebApiApresentacao.Controllers.ValuesController">
+            <summary>
+            Values COntroller
+            </summary>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ValuesController.Get">
+            <summary>
+            GET api/values 
+            </summary>
+            <returns>values</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            GET api/values/5 
+            </summary>
+            <param name="id">id</param>
+            <returns>value</returns>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ValuesController.Post(System.String)">
+            <summary>
+            POST api/values
+            </summary>
+            <param name="value">value</param>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            PUT api/values/5 
+            </summary>
+            <param name="id">id</param>
+            <param name="value">value</param>
+        </member>
+        <member name="M:WebApiApresentacao.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            DELETE api/values/5
+            </summary>
+            <param name="id">id</param>
+        </member>
+    </members>
+</doc>
